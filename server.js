@@ -34,7 +34,8 @@ app.engine("handlebars", expressHandlebars({
 }));
 
 // Connect to the Mongo DB
-var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/mongoHeadlines";
+var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/onionHeadlines"; 
+// mongodb://<dbuser>:<dbpassword>@ds253537.mlab.com:53537/heroku_mh5zlcl2
 mongoose.connect(MONGODB_URI, { useNewUrlParser: true });
 
 // Routes
